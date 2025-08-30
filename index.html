@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IntelliCard - AI Flashcard Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: 'hsl(210, 90%, 50%)',
+                '50': 'hsl(210, 90%, 95%)',
+                '100': 'hsl(210, 90%, 90%)',
+                '200': 'hsl(210, 90%, 80%)',
+                '300': 'hsl(210, 90%, 70%)',
+                '400': 'hsl(210, 90%, 60%)',
+                '500': 'hsl(210, 90%, 50%)',
+                '600': 'hsl(210, 90%, 45%)',
+                '700': 'hsl(210, 90%, 40%)',
+                '800': 'hsl(210, 90%, 30%)',
+                '900': 'hsl(210, 90%, 20%)',
+                '950': 'hsl(210, 90%, 10%)',
+              },
+            },
+            keyframes: {
+                'enter': {
+                    '0%': { transform: 'scale(0.9)', opacity: 0 },
+                    '100%': { transform: 'scale(1)', opacity: 1 },
+                },
+                'leave': {
+                    '0%': { transform: 'scale(1)', opacity: 1 },
+                    '100%': { transform: 'scale(0.9)', opacity: 0 },
+                },
+            },
+            animation: {
+                'enter': 'enter 0.2s ease-out',
+                'leave': 'leave 0.2s ease-in forwards',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "recharts": "https://aistudiocdn.com/recharts@^3.1.2",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 dark:bg-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

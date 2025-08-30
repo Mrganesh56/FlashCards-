@@ -1,0 +1,7 @@
+{
+  "name": "IntelliCard - AI Flashcard Generator",
+  "description": "An intelligent flashcard generator that transforms your study materials into interactive learning decks. Upload notes, PDFs, or images and let AI create customized flashcards to help you study smarter.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
